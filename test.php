@@ -13,6 +13,11 @@ require_once 'EmployeeView.php';
 </head>
 <body>
 <?php
+    $Employee3 = new EmployeeView();
+    echo $Employee3->showEmployee();
+
+
+    $Employee1 = new EmployeeContr();
 
     //$Employee1->createEmployee("Awais", "Feroz", "Male", "1999-12-11", "150000");
     //$Employee1->updateEmployee("3","Mahad", "Farooq", "Male", "1999-11-22", "250000");

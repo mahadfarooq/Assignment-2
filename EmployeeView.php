@@ -4,8 +4,8 @@ require_once 'EmployeeModel.php';
 class EmployeeView{
 
     public function showEmployee(){
-        $employee1 = new EmployeeModel();
-        echo $employee1->getEmployee();
+        $Employee2 = new EmployeeModel();
+    echo $Employee2->getEmployee();
         }
 
 }

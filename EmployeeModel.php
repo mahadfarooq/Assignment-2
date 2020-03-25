@@ -7,7 +7,8 @@ class EmployeeModel extends dbh{
         $sql = "SELECT * FROM employeedetails";
         $stmt = $this->connect()->query($sql);
         while($row = $stmt->fetch()){
-            return $row['FirstName'];
+
+            echo 'Name: '.$row['FirstName'].' '.$row['LastName'].' | Gender: '.$row['Gender'].' | Hired Date: '.$row['HiredDate'].' | Salary: '.$row['Salary'].'<br>';
     }
 
     }
